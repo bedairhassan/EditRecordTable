@@ -19,8 +19,11 @@ function App() {
   return (
     <React.Fragment>
       
+      {isOn ? `Setting1`:`Setting2`}
+      <br/>
       <Switch clickCheckboxP={clickCheckbox}/>
 
+<br/><br/>
       <ConditionalR isOn={isOn}/>
 
     </React.Fragment>

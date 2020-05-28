@@ -1,14 +1,21 @@
 import React from 'react'
 import ParentEditRecord from '../EditRecordWithinTable/ParentEditRecord'
+import ParentEditSeparate from '../ParentEditSeparate/ParentEditSeparate'
 
 const ConditionalR = ({isOn})=>{
 
     if(isOn===true){
 
-        return(<ParentEditRecord/>)
+        return(<React.Fragment>
+            Setting 1
+            <ParentEditRecord/>
+        </React.Fragment>)
     }
     else{
-        return (<h1>Setting 2</h1>)
+        return (<React.Fragment>
+            Setting 2
+            <ParentEditSeparate/>
+        </React.Fragment>)
     }
 }
 
